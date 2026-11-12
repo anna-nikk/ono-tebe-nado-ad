@@ -343,115 +343,52 @@
 
 }
 
-/* =========================================
-   АДАПТИВ ДЛЯ ЭКРАНОВ 1100PX И МЕНЬШЕ
-   ========================================= */
+
 @media (max-width: 1100px) {
   .header {
     padding: 40px 30px;
-    grid-template-columns: 1fr auto;
-    grid-template-areas: 
-      "menu logo"
-      "address address";
-    row-gap: 30px;
-
-  }
-
-  .header_menu {
-    grid-area: menu;
-
-  }
-
-  .header_logo {
-    grid-area: logo;
-    justify-self: end;
-
-  }
-
-  .header_address {
-    grid-area: address;
-    justify-self: start;
-
   }
 
   .header_links-list {
     gap: 20px;
-
   }
 
   .cover {
     padding: 100px 30px 50px;
-    min-height: 600px;
-
   }
 
   .cover_title {
     font-size: 70px;
     letter-spacing: 5px;
-
   }
 
   .lots {
     padding: 100px 30px 80px;
-
   }
 
   .lots_heading {
     margin-left: 0;
-
   }
 
   .lots_card-list-item {
-    width: 100%;
-    min-height: 450px;
-
+    width: calc((100% - 20px) / 2); 
+    min-height: 500px;
   }
 
   .lots_look-more-link {
     margin-left: 0;
-
   }
 
   .about {
-    grid-template-columns: 1fr;
     padding: 40px 30px 100px;
-    justify-items: center;
-    gap: 40px;
-
-  }
-
-  .about_column {
-    width: 100%;
-
   }
 
   .about_title {
-    text-align: center;
-    margin-top: 0;
+    margin-top: 0; 
     margin-bottom: 40px;
-
-  }
-
-  .about_text {
-    text-align: left;
-
   }
 
   .footer {
-    grid-template-columns: 1fr;
-    justify-items: start;
     padding: 0 30px 60px;
-    gap: 40px;
-
-  }
-
-  .footer_menu-list {
-    align-items: flex-start;
-
-  }
-
-  .footer_social-list {
-    justify-self: start;
-
   }
 }
