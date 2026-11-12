@@ -1,4 +1,3 @@
-/* --- СТИЛИ ШАПКИ (HEADER) --- */
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -75,7 +74,6 @@
 
 }
 
-/* --- СТИЛИ ОБЛОЖКИ (COVER) --- */
 .cover {
   position: relative;
   min-height: 757px;
@@ -157,7 +155,6 @@
 
 }
 
-/* --- СТИЛИ ЛОТОВ (LOTS) --- */
 .lots {
   padding: 180px 50px 120px;
 
@@ -246,7 +243,6 @@
 
 }
 
-/* --- СЕКЦИЯ ОБ АУКЦИОНЕ (ABOUT) --- */
 .about {
   display: grid;
   grid-template-columns: 334px 1fr;
@@ -290,7 +286,6 @@
 
 }
 
-/* --- СТИЛИ ПОДВАЛА (FOOTER) --- */
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -345,7 +340,7 @@
 
 @media (max-width: 1100px) {
   .header {
-    padding: 40px 20px;
+    padding: 30px 20px;
     grid-template-columns: 1fr min-content 1fr;
 
   }
@@ -398,15 +393,13 @@
   }
 
   .lots_card-list {
-    display: flex;
-    flex-wrap: wrap;
     gap: 20px;
 
   }
 
   .lots_card-list-item {
     width: calc((100% - 20px) / 2);
-    min-height: 500px;
+    min-height: 400px;
 
   }
 
@@ -432,12 +425,11 @@
 
   .about {
     padding: 40px 20px 80px;
-    grid-template-columns: 250px 1fr;
+    grid-template-columns: 280px 1fr;
     gap: 20px;
 
   }
 
-  /* Отключаем margin-top у заголовка, чтобы он не наезжал */
   .about_title {
     margin-top: 0;
     margin-bottom: 20px;
