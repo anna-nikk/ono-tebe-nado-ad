@@ -4,19 +4,23 @@
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   padding: 92px 50px 96px;
+
 }
 
 .header_logo {
   display: block;
   width: 148px;
+
 }
 
 .header_logo-image {
   display: block;
+
 }
 
 .header_menu {
   justify-self: start;
+
 }
 
 .header_links-list {
@@ -24,20 +28,24 @@
   gap: 32px;
   list-style: circle;
   padding-left: 0;
+
 }
 
 .header_links-list-item_no-bullit {
   list-style: none;
+
 }
 
 .header_link {
   text-decoration: none;
   font-size: 18px;
   color: #000;
+
 }
 
 .header_link_active {
   text-decoration: underline;
+
 }
 
 .address {
@@ -47,25 +55,29 @@
   font-style: normal;
   font-size: 18px;
   line-height: 24px;
+
 }
 
 .address_link {
   color: #000;
   text-decoration: none;
+
 }
 
 .address_text {
   margin-top: 4px;
+
 }
 
 .header_address {
   justify-self: end;
   max-width: 240px;
+
 }
 
 /* --- СТИЛИ ОБЛОЖКИ (COVER) --- */
 .cover {
-  position: relative; /* Важно для ограничения оверлея */
+  position: relative;
   min-height: 757px;
   padding: 165px 50px 50px;
   background-image: url('../images/cover.jpg');
@@ -73,13 +85,15 @@
   background-position: center;
   background-repeat: no-repeat;
   color: #fff;
+
 }
 
 .overlay {
   position: absolute;
-  inset: 0; /* top: 0; right: 0; bottom: 0; left: 0; */
+  inset: 0;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 0;
+
 }
 
 .cover_title {
@@ -92,22 +106,27 @@
   letter-spacing: 10px;
   display: flex;
   flex-direction: column;
+
 }
 
 .aligned-text {
   display: block;
+
 }
 
 .aligned-text_left {
   align-self: flex-start;
+
 }
 
 .aligned-text_center {
   align-self: center;
+
 }
 
 .aligned-text_right {
   align-self: flex-end;
+
 }
 
 .cover_description {
@@ -116,13 +135,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: auto; /* Прижимаем блок вниз */
+  margin-top: auto;
+
 }
 
 .cover_description-text {
   font-size: 22px;
   text-transform: uppercase;
   word-spacing: 18px;
+
 }
 
 .bet-button {
@@ -133,11 +154,13 @@
   font-size: 22px;
   text-transform: uppercase;
   cursor: pointer;
+
 }
 
 /* --- СТИЛИ ЛОТОВ (LOTS) --- */
 .lots {
   padding: 180px 50px 120px;
+
 }
 
 .lots_heading {
@@ -145,6 +168,7 @@
   text-transform: uppercase;
   margin-bottom: 27px;
   margin-left: 40px;
+
 }
 
 .lots_card-list {
@@ -153,44 +177,47 @@
   gap: 25px;
   list-style: none;
   padding: 0;
+
 }
 
 .lots_card-list-item {
   width: calc((100% - 25px) / 2);
   min-height: 596px;
+
 }
 
 .card-link {
   display: block;
   height: 100%;
   text-decoration: none;
+
 }
 
 .card {
-  position: relative; 
+  position: relative;
+  height: 100%;
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-size: cover;
+  background-position: center;
+
 }
 
-.card::before { 
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-color: rgba(255, 255, 255, 0.85);
-  z-index: 0;
+.card_type_film {
+  background-image: url('../images/card-lot-01.jpg');
+
 }
 
-.card_type_film { 
-  background-image: url('../images/card-lot-01.jpg'); 
-  
-}
-
-.card_type_book { 
+.card_type_book {
   background-image: url('../images/card-lot-02.jpg');
-  
+
 }
 
-.card_type_picture { 
-  background-image: url('../images/card-lot-03.jpg'); 
-  
+.card_type_picture {
+  background-image: url('../images/card-lot-03.jpg');
+
 }
 
 .card_title {
@@ -199,6 +226,7 @@
   color: #000;
   font-size: 22px;
   text-decoration: underline;
+
 }
 
 .card_text {
@@ -206,14 +234,16 @@
   z-index: 1;
   color: #000;
   font-size: 20px;
+
 }
-  
+
 .lots_look-more-link {
   display: inline-block;
   margin-top: 30px;
   margin-left: 40px;
   font-size: 20px;
   color: #000;
+
 }
 
 /* --- СЕКЦИЯ ОБ АУКЦИОНЕ (ABOUT) --- */
@@ -222,6 +252,7 @@
   grid-template-columns: 334px 1fr;
   gap: 25px;
   padding: 35px 50px 180px;
+
 }
 
 .about_logo {
@@ -232,19 +263,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
+  margin: 0 auto;
+
+}
+
+.about_logo-image {
+  width: 140px;
+  display: block;
+
 }
 
 .about_title {
   font-size: 40px;
   text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 24px;
-}
+  margin-top: 100px;
+  margin-bottom: 100px;
 
-.about_logo-image {
-  width: 140px; /* Ограничиваем логотип, чтобы не ломал макет */
-  display: block;
 }
 
 .about_text {
@@ -253,6 +287,7 @@
   gap: 24px;
   font-size: 20px;
   line-height: 24px;
+
 }
 
 /* --- СТИЛИ ПОДВАЛА (FOOTER) --- */
@@ -261,10 +296,12 @@
   grid-template-columns: 1fr 1fr 1fr;
   padding: 0 50px 88px;
   align-items: start;
+
 }
 
 .footer_address {
   max-width: 240px;
+
 }
 
 .footer_menu-list {
@@ -275,16 +312,19 @@
   flex-direction: column;
   align-items: center;
   gap: 5px;
+
 }
 
 .footer_menu-link {
   text-decoration: none;
   font-size: 18px;
   color: #000;
+
 }
 
 .footer_menu-link_active {
   text-decoration: underline;
+
 }
 
 .footer_social-list {
@@ -294,14 +334,18 @@
   display: flex;
   gap: 48px;
   justify-self: end;
+
 }
 
 .footer_social-icon {
   width: 48px;
   height: 48px;
+
 }
 
-
+/* =========================================
+   АДАПТИВ ДЛЯ ЭКРАНОВ 1100PX И МЕНЬШЕ
+   ========================================= */
 @media (max-width: 1100px) {
   .header {
     padding: 40px 30px;
@@ -310,87 +354,104 @@
       "menu logo"
       "address address";
     row-gap: 30px;
+
   }
 
   .header_menu {
     grid-area: menu;
+
   }
 
   .header_logo {
     grid-area: logo;
     justify-self: end;
+
   }
 
   .header_address {
     grid-area: address;
     justify-self: start;
+
   }
 
   .header_links-list {
     gap: 20px;
+
   }
 
- 
   .cover {
     padding: 100px 30px 50px;
     min-height: 600px;
+
   }
 
   .cover_title {
-    font-size: 70px; 
+    font-size: 70px;
     letter-spacing: 5px;
-  }
 
+  }
 
   .lots {
     padding: 100px 30px 80px;
+
   }
 
   .lots_heading {
     margin-left: 0;
+
   }
 
   .lots_card-list-item {
-    width: 100%; 
+    width: 100%;
     min-height: 450px;
+
   }
 
   .lots_look-more-link {
     margin-left: 0;
+
   }
 
   .about {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     padding: 40px 30px 100px;
-    justify-items: center; 
+    justify-items: center;
     gap: 40px;
+
   }
 
   .about_column {
     width: 100%;
+
   }
 
   .about_title {
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 40px;
+
   }
 
   .about_text {
     text-align: left;
+
   }
 
- 
   .footer {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     justify-items: start;
     padding: 0 30px 60px;
     gap: 40px;
+
   }
 
   .footer_menu-list {
-    align-items: flex-start; 
+    align-items: flex-start;
+
   }
 
   .footer_social-list {
     justify-self: start;
+
   }
 }
