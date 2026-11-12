@@ -346,28 +346,50 @@
 
 @media (max-width: 1100px) {
   .header {
-    padding: 40px 30px;
+    padding: 40px 20px;
+    grid-template-columns: 1fr min-content 1fr;
 
   }
 
   .header_links-list {
-    gap: 20px;
+    gap: 15px;
+
+  }
+
+  .header_link {
+    font-size: 16px;
+
+  }
+
+  .address {
+    font-size: 16px;
 
   }
 
   .cover {
-    padding: 100px 30px 50px;
+    padding: 80px 20px 40px;
 
   }
 
   .cover_title {
-    font-size: 70px;
-    letter-spacing: 5px;
+    font-size: 60px;
+    letter-spacing: 2px;
+
+  }
+
+  .cover_description-text {
+    font-size: 18px;
+
+  }
+
+  .bet-button {
+    font-size: 18px;
+    padding: 10px 20px;
 
   }
 
   .lots {
-    padding: 100px 30px 80px;
+    padding: 80px 20px 60px;
 
   }
 
@@ -376,9 +398,31 @@
 
   }
 
+  .lots_card-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+  }
+
   .lots_card-list-item {
-    width: calc((100% - 20px) / 2); 
+    width: auto;
     min-height: 500px;
+
+  }
+
+  .card {
+    padding: 30px 20px;
+
+  }
+
+  .card_title {
+    font-size: 18px;
+
+  }
+
+  .card_text {
+    font-size: 16px;
 
   }
 
@@ -388,18 +432,27 @@
   }
 
   .about {
-    padding: 40px 30px 100px;
+    padding: 40px 20px 80px;
+    grid-template-columns: 250px 1fr;
+    gap: 20px;
 
   }
 
   .about_title {
-    margin-top: 0; 
-    margin-bottom: 40px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 32px;
+
+  }
+
+  .about_text {
+    font-size: 16px;
 
   }
 
   .footer {
-    padding: 0 30px 60px;
-    
+    padding: 0 20px 60px;
+    grid-template-columns: 1fr 1fr 1fr;
+
   }
 }
