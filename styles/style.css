@@ -167,7 +167,10 @@
 }
 
 .card {
-  ::before {
+  position: relative; 
+}
+
+.card::before { 
   content: '';
   position: absolute;
   inset: 0;
