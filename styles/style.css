@@ -103,7 +103,7 @@
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.15;
-  letter-spacing: 10px;
+  letter-spacing: 30px;
   display: flex;
   flex-direction: column;
 
@@ -181,8 +181,8 @@
 
 .lots_card-list-item {
   width: calc((100% - 50px) / 3);
-  min-height: 596px;
-
+  height: 596px;
+  
 }
 
 .card-link {
@@ -404,7 +404,7 @@
  .lots_card-list-item {
   width: calc((100% - 20px) / 2);
   min-height: 400px;
-  
+
 }
 
   .card {
