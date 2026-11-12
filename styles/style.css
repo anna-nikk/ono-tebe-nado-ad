@@ -343,7 +343,6 @@
 
 }
 
-
 @media (max-width: 1100px) {
   .header {
     padding: 40px 20px;
@@ -399,14 +398,14 @@
   }
 
   .lots_card-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 
   }
 
   .lots_card-list-item {
-    width: auto;
+    width: calc((100% - 20px) / 2);
     min-height: 500px;
 
   }
@@ -438,6 +437,7 @@
 
   }
 
+  /* Отключаем margin-top у заголовка, чтобы он не наезжал */
   .about_title {
     margin-top: 0;
     margin-bottom: 20px;
