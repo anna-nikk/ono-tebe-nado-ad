@@ -101,13 +101,13 @@
   position: relative;
   z-index: 1;
   font-size: 100px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   line-height: 1.15;
-  letter-spacing: 10px;
+  letter-spacing: 30px;
   display: flex;
   flex-direction: column;
-  gap: 0px;
+  gap: 20px;
 
 }
 
@@ -178,8 +178,8 @@
 }
 
 .lots_card-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 25px;
   list-style: none;
   padding: 0;
@@ -187,14 +187,14 @@
 }
 
 .lots_card-list-item {
-  width: 334px;
+  min-width: 0;
   min-height: 596px;
-  flex-grow: 1;
 
 }
 
 .card-link {
-  display: block;
+  display: flex;
+  min-height: 596px;
   height: 100%;
   text-decoration: none;
 
@@ -202,14 +202,15 @@
 
 .card {
   position: relative;
-  height: 100%;
+  width: 100%;
+  min-height: 596px;
   padding: 48px 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-size: cover;
   background-position: center;
-
+  
 }
 
 .card_type_film {
@@ -353,117 +354,4 @@
   width: 48px;
   height: 48px;
 
-}
-
-@media (max-width: 1099px) {
-  .header {
-    padding: 30px 20px;
-    grid-template-columns: 1fr min-content 1fr;
-
-  }
-
-  .header_links-list {
-    gap: 15px;
-
-  }
-
-  .header_link {
-    font-size: 16px;
-
-  }
-
-  .address {
-    font-size: 16px;
-
-  }
-
-  .cover {
-    display: flex;
-    flex-direction: column;
-    padding: 80px 20px 40px;
-
-  }
-
-  .cover_title {
-    font-size: 60px;
-    letter-spacing: 10px;
-
-  }
-
-  .cover_description-text {
-    font-size: 18px;
-
-  }
-
-  .bet-button {
-    font-size: 18px;
-    padding: 10px 20px;
-
-  }
-
-  .lots {
-    padding: 80px 20px 60px;
-
-  }
-
-  .lots_heading {
-    margin-left: 0;
-
-  }
-
-  .lots_card-list {
-    gap: 20px;
-
-  }
-
- .lots_card-list-item {
-  width: 334px;
-  min-height: 400px;
-
-}
-
-  .card {
-    padding: 30px 20px;
-
-  }
-
-  .card_title {
-    font-size: 18px;
-
-  }
-
-  .card_text {
-    font-size: 16px;
-
-  }
-
-  .lots_look-more-link {
-    margin-left: 0;
-
-  }
-
-  .about {
-    padding: 40px 20px 80px;
-    grid-template-columns: 280px 1fr;
-    gap: 20px;
-
-  }
-
-  .about_title {
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-size: 32px;
-
-  }
-
-  .about_text {
-    font-size: 16px;
-
-  }
-
-  .footer {
-    padding: 0 20px 60px;
-    grid-template-columns: 1fr 1fr 1fr;
-
-  }
 }
